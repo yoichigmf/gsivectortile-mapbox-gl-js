@@ -2,10 +2,10 @@
 <html>
 <head>
 <meta charset='utf-8' />
-<title>地理院地図VectorのベクトルタイルをMapbox GL JSで表示するサンプル</title>
+<title>地理院地図VectorのベクトルタイルをMaplibre JSで表示するサンプル</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-<script src='./mapbox/1.8.1/mapbox-gl.js'></script>
-<link href='./mapbox/1.8.1/mapbox-gl.css' rel='stylesheet' />
+<script src="https://unpkg.com/maplibre-gl@2.1.9/dist/maplibre-gl.js"></script>
+<link href="https://unpkg.com/maplibre-gl@2.1.9/dist/maplibre-gl.css" rel="stylesheet" />
 <style>
 body { margin:0; padding:0; }
 #map {
@@ -22,7 +22,7 @@ body { margin:0; padding:0; }
 
 
 <script>
-var map = new mapboxgl.Map({
+var map = new maplibregl.Map({
   container: 'map',
   hash: true,
   style: './pale.json', //style.jsonへのパス
@@ -35,8 +35,8 @@ var map = new mapboxgl.Map({
 });
 
 
-map.addControl(new mapboxgl.NavigationControl(), 'bottom-right');
-map.addControl(new mapboxgl.ScaleControl() );
+map.addControl(new maplibregl.NavigationControl(), 'bottom-right');
+map.addControl(new maplibregl.ScaleControl() );
 
 </script>
  
